@@ -2,10 +2,14 @@ export VENV_DIR=/home/ee331/Dev/Venvs/v060
 
 source $VENV_DIR/bin/activate 
 
+# sourcing correct gcc for multiphenicsx
+export CC=/home/ee331/bin/gcc
+export CXX=/home/ee331/bin/g++
+
 export OMPI=/$VENV_DIR/installation/openmpi
 export PATH=$OMPI/bin:$PATH
 export LD_LIBRARY_PATH=$OMPI/lib:$LD_LIBRARY_PATH
-export OMP_NUM_THREADS=1
+#export OMP_NUM_THREADS=1
 
 export KAHIP=$VENV_DIR/installation/KaHIP
 export PATH=$KAHIP/bin:$PATH
