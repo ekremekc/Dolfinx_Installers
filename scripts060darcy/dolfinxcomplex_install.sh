@@ -201,12 +201,22 @@ cd ../python
 export CMAKE_PREFIX_PATH=$CMAKE_INSTALL_PREFIX/dolfinx-mpc:$CMAKE_PREFIX_PATH
 CXXFLAGS=${DOLFINX_CMAKE_CXX_FLAGS} PETSC_ARCH=linux-gnu-complex-32 pip3 install --target $VENV_DIR/lib/python3.8/dist-packages --no-dependencies .
 
+# install multiphenicsx
+cd $REPO_DIR
+cd src
+git clone https://github.com/multiphenics/multiphenicsx.git
+cd multiphenicsx
+pip3 install .[tutorials]
+
 cd $SCRIPT_DIR
 # install pyvista
 pip3 install --no-cache-dir pyvista==${PYVISTA_VERSION}
 pip3 install pythreejs
 pip3 install meshio
 pip3 install h5py
+
+
+
 
 cd /home/ee331/Dev
 git clone https://github.com/ekremekc/Helmholtz-x.git
