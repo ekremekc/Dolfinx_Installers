@@ -18,7 +18,6 @@ make install # This code will executed tomorrow
 echo "Installation of gcc is complete"
 echo "Now, we will link the libraries.."
 
-# Add the 4 lines below to the .bashrc file.
 export PATH=/home/ee331/gcc-12/bin:$PATH
 export LD_LIBRARY_PATH=$HOME/gcc-12/lib64:$LD_LIBRARY_PATH
 export CC=/home/ee331/gcc-12/bin/gcc
