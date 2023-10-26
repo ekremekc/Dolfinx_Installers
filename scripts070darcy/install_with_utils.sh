@@ -158,7 +158,7 @@ export CMAKE_PREFIX_PATH=$INSTALL_DIR/dolfinx-mpc:$CMAKE_PREFIX_PATH
 CXXFLAGS=${DOLFINX_CMAKE_CXX_FLAGS} PETSC_ARCH=linux-gnu-complex-32 pip3 install --target $VENV_DIR/lib/python3.8/dist-packages --no-dependencies .
 
 # install adios4dolfinx
-export adios4dolfinx_VERSION=v0.7.0
+export adios4dolfinx_VERSION=v0.7.1
 git clone -b ${adios4dolfinx_VERSION} --single-branch https://github.com/jorgensd/adios4dolfinx.git
 cd adios4dolfinx
 pip3 install .

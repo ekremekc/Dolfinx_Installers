@@ -29,4 +29,4 @@ export PYTHONPATH=$VENV_DIR/lib/python3.8/dist-packages:/usr/bin/python3:$PYTHON
 export LD_LIBRARY_PATH=$VENV_DIR/installation/lib:$LD_LIBRARY_PATH
 
 # For ADIOS2
-#export PYTHONPATH=$VENV_DIR/installation/adios2/home/ee331/Dev/Venvs/v060/lib/python3.8/site-packages/adios2:$PYTHONPATH
+export PYTHONPATH=/home/ee331/Dev/Venvs/dolfinx_utils/adios2/home/ee331/Dev/Venvs/v070complex/lib/python3.8/site-packages/adios2:PYTHONPATH

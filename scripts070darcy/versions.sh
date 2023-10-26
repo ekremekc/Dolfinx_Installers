@@ -7,7 +7,6 @@ export ADIOS2_VERSION=2.9.1
 export PYVISTA_VERSION=0.37.0
 export NUMPY_VERSION=1.23.2
 export KAHIP_VERSION=3.15
-export XTL_VERSION=0.7.4
 
 export BASIX_VERSION=v0.7.0
 export UFL_VERSION=2023.2.0
@@ -44,8 +43,6 @@ export DOLFINX_CMAKE_BUILD_TYPE="RelWithDebInfo"
 
 export SLEPC_DIR=$INSTALL_DIR/slepc
 export ADIOS2_DIR=$INSTALL_DIR/adios2/cmake
-export xtl_DIR=$INSTALL_DIR/xtl
-export xtensor_DIR=$INSTALL_DIR/xtensor/lib/cmake
 export COMPLEX_PREFIX=$INSTALL_DIR/dolfinx-complex
 export CMAKE_INSTALL_PREFIX=$INSTALL_DIR
 export REPO_DIR=$VENV_DIR/repos
