@@ -1,0 +1,9 @@
+I made a seperate directory for dolfinx dependencies up until petsc. Then I generate a virtual environment. Within that environment, I install the dependencies starting from petsc and then
+- slepc
+- python packages
+ 
+ and so on. 
+ 
+ It is important to note that installing cython at the beginning caused an issue during the installation of petsc4py and slepc4py.
+ 
+For some reason, I could not installed dolfinx_mpc but others work fine.
